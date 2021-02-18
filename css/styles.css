@@ -79,6 +79,7 @@ ul.nav-link,
 ul.nav-info {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 nav {
@@ -130,6 +131,41 @@ nav a.logo {
     margin-left: 0;
 }
 
+.icon::before {
+    content: '';
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.link-mail.link.icon::before {
+    width: 16px;
+    height: 12px;
+    background-image: url(/images/icons-nav/mail.svg);
+}
+
+.link-tel.link.icon::before {
+    content: '';
+    width: 10px;
+    height: 16px;
+    background-image: url(/images/icons-nav/tel.svg);
+}
+
+a.link-mail.link {
+    display: flex;
+    justify-content: space-between;
+    width: 161px;
+    align-items: center;
+}
+
+a.link-tel.link {
+    display: flex;
+    justify-content: space-between;
+    width: 142px;
+    align-items: center;
+}
+
 .nav-link,
 .nav-info {
     font-weight: 500;
@@ -152,10 +188,6 @@ nav a.logo {
     color: var(--notactiv-color);
 }
 
-.link-tel {
-    color: var(--notactiv-color);
-}
-
 
 /* главная секция */
 
@@ -171,7 +203,7 @@ nav a.logo {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(#ffffff4b, #2f303a60), url(/images/img-hero.jpg);
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/img-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
