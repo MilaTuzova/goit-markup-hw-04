@@ -118,7 +118,7 @@ nav a.logo {
     color: var(--accent-color);
 }
 
-.link {
+.nav-link .link {
     display: inline-block;
     margin-left: 50px;
 }
@@ -127,10 +127,8 @@ nav a.logo {
     margin-left: 0;
 }
 
-.link-mail.link {
-    margin-left: 0;
-}
 
+/*
 .icon::before {
     content: '';
     background-size: contain;
@@ -151,19 +149,26 @@ nav a.logo {
     height: 16px;
     background-image: url(/images/icons-nav/tel.svg);
 }
+*/
 
-a.link-mail.link {
+.icon-mail {
     display: flex;
     justify-content: space-between;
     width: 161px;
     align-items: center;
 }
 
-a.link-tel.link {
+.icon-tel {
     display: flex;
     justify-content: space-between;
     width: 142px;
     align-items: center;
+    margin-left: 30px;
+}
+
+.link-tel,
+.link-mail {
+    margin-left: 10px;
 }
 
 .nav-link,
@@ -186,6 +191,24 @@ a.link-tel.link {
 
 .link:active {
     color: var(--notactiv-color);
+}
+
+.icon-tel-sprite {
+    width: 10px;
+    height: 16px;
+}
+
+.icon-mail-sprite {
+    width: 16px;
+    height: 12px;
+    fill: var(--notactiv-color);
+}
+
+.icon-tel-sprite:hover,
+.icon-mail-sprite:hover,
+.icon-mail-sprite:focus,
+.icon-tel-sprite:focus {
+    fill: var(--accent-color);
 }
 
 
