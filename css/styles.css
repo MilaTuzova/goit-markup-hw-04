@@ -16,6 +16,7 @@ html {
     --primary-white-color: #ffffff;
     --button-color: #f5f4fa;
     --footer-backgr-color: #2f303a;
+    /*--icon-cards-color: #F5F4FA;*/
 }
 
 .visually-hidden {
@@ -150,6 +151,11 @@ nav a.logo {
     background-image: url(/images/icons-nav/tel.svg);
 }
 */
+
+.icon {
+    display: flex;
+    align-content: center;
+}
 
 .icon-mail {
     display: flex;
@@ -311,6 +317,21 @@ nav a.logo {
     font-size: 14px;
     line-height: 2;
     color: var(--notactiv-color);
+}
+
+.icon-cards {
+    width: 270px;
+    height: 120px;
+    background-color: var(--button-color);
+    border-radius: 4px;
+    margin-bottom: 33px;
+    background-position: center;
+}
+
+.icon-cards-item {
+    width: 70px;
+    height: 70px;
+    margin: 25px 100px;
 }
 
 
