@@ -196,6 +196,7 @@ nav a.logo {
 .icon-tel-sprite {
     width: 10px;
     height: 16px;
+    fill: var(--notactiv-color);
 }
 
 .icon-mail-sprite {
