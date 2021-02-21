@@ -131,19 +131,17 @@ nav a.logo {
     margin-left: 0;
 }
 
-.icon-mail {
+.link-mail {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
     width: 161px;
 }
 
-.icon-tel {
+.link-tel {
     display: flex;
-    justify-content: space-between;
-    width: 142px;
-    align-items: center;
     margin-left: 30px;
+    text-align: center;
+    width: 142px;
 }
 
 .nav-link,
