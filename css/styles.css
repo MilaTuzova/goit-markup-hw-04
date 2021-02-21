@@ -16,7 +16,7 @@ html {
     --primary-white-color: #ffffff;
     --button-color: #f5f4fa;
     --footer-backgr-color: #2f303a;
-    /*--icon-cards-color: #F5F4FA;*/
+    --cosial-color: #afb1b8;
 }
 
 .visually-hidden {
@@ -423,6 +423,54 @@ nav a.logo {
 .team-list-img {
     display: block;
     width: 270px;
+}
+
+.list-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 206px;
+    height: 44px;
+    margin: 0px 32px 30px;
+}
+
+.icon-cosial {
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.icon-cosial:last-child {
+    margin-right: 0px;
+}
+
+.icon-cosial-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px 12px;
+    color: var(--cosial-color);
+}
+
+.icon-item {
+    fill: currentColor;
+}
+
+.icon-cosial-link:hover,
+.icon-cosial-link:focus {
+    background-color: var(--accent-color);
+}
+
+.icon-item:focus,
+.icon-item:hover {
+    fill: var(--primary-white-color);
+}
+
+.icon-cosial-link:hover .icon-item,
+.icon-cosial-link:focus .icon-item {
+    fill: var(--primary-white-color);
 }
 
 
