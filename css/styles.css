@@ -135,6 +135,7 @@ nav a.logo {
     display: flex;
     align-items: center;
     width: 161px;
+    color: var(--notactiv-color);
 }
 
 .link-tel {
@@ -155,31 +156,29 @@ nav a.logo {
 }
 
 .link:hover,
-.link:focus,
 .link.current,
 .link:focus {
     color: var(--accent-color);
 }
 
 .icon-tel-sprite {
-    width: 10px;
-    height: 16px;
     margin-right: 10px;
     fill: var(--notactiv-color);
 }
 
 .icon-mail-sprite {
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
     fill: var(--notactiv-color);
 }
 
-.icon-tel-sprite:hover,
-.icon-mail-sprite:hover,
-.icon-mail-sprite:focus,
-.icon-tel-sprite:focus {
-    fill: var(--accent-color);
+
+/* ховер и фокус для телефона и почты в хедере*/
+
+.link:hover .icon-mail-sprite,
+.link:focus .icon-mail-sprite,
+.link:hover .icon-tel-sprite,
+.link:focus .icon-tel-sprite {
+    fill: var(--accent-color)
 }
 
 
@@ -488,14 +487,8 @@ nav a.logo {
     fill: var(--accent-color);
 }
 
-.button-client:hover,
-.button-client:focus {
-    border-color: var(--accent-color);
-}
-
-.button-client:active .client-icon,
-.button-client:active {
-    fill: var(--accent-color);
+.button-client:focus,
+.button-client:hover {
     border-color: var(--accent-color);
 }
 
