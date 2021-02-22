@@ -178,7 +178,7 @@ nav a.logo {
 .link:focus .icon-mail-sprite,
 .link:hover .icon-tel-sprite,
 .link:focus .icon-tel-sprite {
-    fill: var(--accent-color)
+    fill: var(--accent-color);
 }
 
 
